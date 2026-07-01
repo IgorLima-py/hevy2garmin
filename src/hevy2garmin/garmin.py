@@ -342,7 +342,7 @@ def push_exercise_sets(client: Garmin, activity_id: int, payload: dict) -> None:
     """
     url = f"/activity-service/activity/{activity_id}/exerciseSets"
     time.sleep(1.0)  # manual rate limit
-    client.client.request("PUT", "connectapi", url, json=payload)
+    client.client.request("POST", "connectapi", url, json=payload)
     logger.info("  Pushed %d exercise sets to activity %s", len(payload.get("exerciseSets", [])), activity_id)
 
 
