@@ -248,7 +248,7 @@ def build_exercise_sets_payload(
         weight_kg = s.get("weight_kg")
 
         active_set: dict = {
-            "exercises": [{"category": cat_str, "name": sub_name, "probability": None}],
+            "exercises": [{"category": cat_str, "name": sub_name, "probability": 0.0}],
             "duration": round(scaled_dur, 3),
             "repetitionCount": int(reps) if reps is not None else 0,
             "weight": float(round(weight_kg * 1000)) if weight_kg else 0.0,
