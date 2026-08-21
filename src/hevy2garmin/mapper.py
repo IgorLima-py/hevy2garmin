@@ -106,7 +106,7 @@ HEVY_TO_GARMIN: dict[str, tuple[int, int]] = {
     #  BACK – Rows (category 23)
     # ======================================================================= #
     "Bent Over Row (Band)":                     (23, 0),   # row / barbell_straight_leg_deadlift_to_row (closest band row)
-    "Bent Over Row (Barbell)":                  (23, 65535),  # ROW / generic (no exact barbell bent-over sub in fit_tool)
+    "Bent Over Row (Barbell)":                  (23, 46),   # row / bent_over_row_with_barbell
     "Bent Over Row (Dumbbell)":                 (23, 2),   # row / dumbbell_row
     "Bent Over Row (Smith Machine)":            (23, 65535),  # ROW / generic (no smith-machine row in FIT)
     "Chest Supported Incline Row (Dumbbell)":   (23, 2),  # ROW / dumbbell_row
